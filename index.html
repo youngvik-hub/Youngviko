@@ -1,8 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Youngvik Hub</title>
-    
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0f0f0f;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: yellow;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* WELCOME */
+.welcome {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    color: yellow;
+}
+
+.welcome p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd49');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* CARDS */
+.section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    margin-top: 20px;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Youngvik Hub</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Music</a>
+        <a href="#">Football</a>
+        <a href="#">Blog</a>
+    </nav>
+</header>
+
 <div class="welcome">
     <h1>Welcome to Youngvik Hub</h1>
     <p>Music • Football • Entertainment • News</p>
