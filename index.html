@@ -1,138 +1,175 @@
-<div class="top-section">
-
-    <h1 class="welcome">Welcome to Youngvik Hub</h1>
-
-</div>
-
-<style>
-.welcome{
-    color: green;
-    font-weight: bold;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-</style>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Youngvik Hub</title>
 
 <style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f5f5f5;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Top Black Section */
-.top-section{
-    background:black;
-    color:white;
-    padding:20px;
+/* BODY */
+body {
+    background: #0f0f0f;
+    color: white;
 }
 
-/* Menu Grid */
-.menu{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-    text-align:center;
-    margin-bottom:30px;
+/* HEADER */
+header {
+    background: #111;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu a{
-    color:white;
-    text-decoration:none;
-    font-size:22px;
-    font-weight:bold;
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: yellow;
 }
 
-/* Home Button */
-.home-btn{
-    background:green;
-    padding:20px;
-    border-radius:15px;
-    display:inline-block;
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-/* Search Box */
-.search-container{
-    display:flex;
-    gap:10px;
+nav a:hover {
+    color: yellow;
 }
 
-.search-container input{
-    flex:1;
-    padding:18px;
-    border:none;
-    border-radius:40px;
-    font-size:20px;
+/* WELCOME */
+.welcome {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.search-container button{
-    background:green;
-    color:white;
-    border:none;
-    padding:18px 35px;
-    border-radius:40px;
-    font-size:20px;
-    cursor:pointer;
+.welcome h1 {
+    font-size: 32px;
+    color: yellow;
 }
 
-/* Hero Section */
-.hero{
-    padding:30px 20px;
+.welcome p {
+    margin-top: 10px;
+    color: #ccc;
 }
 
-.hero h1{
-    font-size:55px;
-    font-weight:bold;
-    margin:0;
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd49');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* CARDS */
+.section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    margin-top: 20px;
+    font-size: 12px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="top-section">
+<header>
+    <div class="logo">Youngvik Hub</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Music</a>
+        <a href="#">Football</a>
+        <a href="#">Blog</a>
+    </nav>
+</header>
 
-    <div class="menu">
-
-        <a href="#" class="home-btn">Home<br>Page</a>
-
-        <a href="#" class="home-btn">new<br>music💿</a>
-
-        <a href="#">Naija<br>Music</a>
-
-        <a href="#">All<br>Artistes</a>
-
-        <a href="#">Celebrity<br>News</a>
-
-        <a href="#">Hot<br>Gists</a>
-
-        <a href="#">Music<br>Reviews</a>
-
-    
-
-    </div>
-
-    <div class="search-container">
-        <input type="text" placeholder="Search youngvik hub..">
-        <button>Search</button>
-    </div>
-
+<div class="welcome">
+    <h1>Welcome to Youngvik Hub</h1>
+    <p>Music • Football • Entertainment • News</p>
 </div>
 
 <div class="hero">
-    <h1>
-        Discover Latest Naija Music
-        and Entertainment
-    </h1>
+    <h2>Your World of Entertainment</h2>
+    <button>Explore Now</button>
 </div>
+
+<div class="section">
+    <h2>What We Offer</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Music</h3>
+            <p>Latest songs & artists</p>
+        </div>
+
+        <div class="card">
+            <h3>Football</h3>
+            <p>News, scores & updates</p>
+        </div>
+
+        <div class="card">
+            <h3>Blog</h3>
+            <p>Daily articles & trends</p>
+        </div>
+
+        <div class="card">
+            <h3>Videos</h3>
+            <p>Entertainment clips</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 Youngvik Hub. All rights reserved.
+</footer>
 
 </body>
 </html>
