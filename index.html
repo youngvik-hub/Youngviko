@@ -6,58 +6,95 @@
 <title>Youngvik Hub</title>
 
 <style>
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family:Arial, sans-serif;
-    background:#111;
-    color:white;
-    text-align:center;
 }
 
-h1{
-    margin-top:30px;
-    color:gold;
-    font-size:40px;
+body{
+    background:#f5f5f5;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    color:#0066ff;
+    font-size:32px;
 }
 
 .cards{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
     gap:20px;
-    padding:30px;
+    max-width:800px;
+    margin:auto;
 }
 
 .card{
-    width:180px;
-    height:120px;
     background:white;
     border-radius:15px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-    font-weight:bold;
-    color:blue;
-    box-shadow:0 4px 10px rgba(0,0,0,0.3);
-    cursor:pointer;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
     transition:0.3s;
+    cursor:pointer;
 }
 
 .card:hover{
-    transform:scale(1.05);
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#0066ff;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+}
+
+@media(max-width:600px){
+    .cards{
+        grid-template-columns:1fr;
+    }
 }
 </style>
 </head>
-
 <body>
 
-<h1>Welcome to Youngvik Hub</h1>
+<header>
+    <h1>Welcome to Youngvik Hub</h1>
+</header>
 
 <div class="cards">
-    <div class="card">Music 💿</div>
-    <div class="card">Football ⚽</div>
-    <div class="card">Entertainment 🎬</div>
+
+    <div class="card">
+        <h2>⚽ Football Transfer</h2>
+        <p>Latest football transfer updates.</p>
+    </div>
+
+    <div class="card">
+        <h2>🎵 Music</h2>
+        <p>Trending songs and artists.</p>
+    </div>
+
+    <div class="card">
+        <h2>🎬 Entertainment</h2>
+        <p>Movies, celebrities and shows.</p>
+    </div>
+
+    <div class="card">
+        <h2>📰 News</h2>
+        <p>Breaking news from around the world.</p>
+    </div>
+
 </div>
 
 </body>
